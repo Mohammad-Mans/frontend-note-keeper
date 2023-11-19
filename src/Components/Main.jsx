@@ -6,7 +6,7 @@ import Notes from "./Notes";
 function Main({ filter }) {
   const [notes, setNotes] = useState([]);
   const [filteredNotes, setFilteredNotes] = useState(null);
-  const api = '/api';
+  const api = "https://notekeeper-api-ltm8.onrender.com/notes/";
 
   useEffect(() => {
     fetchData();
@@ -61,7 +61,7 @@ function Main({ filter }) {
     } catch (error) {
       console.error("Error:", error);
     }
-  }
+  };
 
   const handleDeleteNote = async (noteId) => {
     try {
