@@ -10,8 +10,8 @@
   color: var(--text-color);
   border-bottom: 1px solid var(--background-light);
 
-  >h1{
-    >.special{
+  > h1 {
+    > .special {
       color: var(--main-color);
     }
   }
@@ -45,6 +45,22 @@
       width: 100%;
       font-size: 16px;
       color: var(--text-color);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main-header {
+    > .search-bar {
+      width: 350px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .main-header {
+    > h1 {
+      display: none;
     }
   }
 }
