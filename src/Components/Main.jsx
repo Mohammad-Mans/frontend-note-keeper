@@ -9,7 +9,7 @@ function Main({ filter }) {
   const api = "https://notekeeper-api-ltm8.onrender.com/notes/";
 
   useEffect(() => {
-    fetchData();
+    
   }, []);
 
   useEffect(() => {
